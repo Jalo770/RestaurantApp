@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="1dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/item_grey">
+
+    <LinearLayout
+        android:id="@+id/item_order_linear"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="@color/item_green"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_order_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/item_order_cost"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_order_cost_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dollar"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/item_order_cost_int"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_order_linear2"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_toRightOf="@+id/item_order_linear"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/name"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/item_order_name_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/item_order_altname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/alternative_name"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/item_order_altname_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_order_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/order"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/item_order_order_int"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_order_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/table"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/item_order_table_int"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

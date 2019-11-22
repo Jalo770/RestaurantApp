@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mad.restaurantapp.UI.OrderCreateItem"
+    tools:showIn="@layout/activity_order_create_item">
+
+    <TextView
+        android:id="@+id/content_order_create_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content_order_create_item_title"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/content_order_create_item_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_order_create_item_title"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <EditText
+            android:id="@+id/content_order_create_item_name_string"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/content_order_create_item_dish_name" />
+
+        <EditText
+            android:id="@+id/content_order_create_item_altname_string"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/content_order_create_item_altName" />
+
+        <EditText
+            android:id="@+id/content_order_create_item_cost_int"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/content_order_create_item_cost"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/content_order_create_item_order_number_int"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/content_order_create_item_order_number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/content_order_create_item_table_int"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/content_order_create_item_number_takeaway"
+            android:inputType="numberSigned" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/content_order_create_item_create_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/create_button" />
+
+        <Button
+            android:id="@+id/content_order_create_item_cancel_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/cancel_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>

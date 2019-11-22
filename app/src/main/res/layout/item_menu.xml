@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="1dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/item_grey">
+
+    <TextView
+        android:id="@+id/menu_item_menu_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="@string/menu_id" />
+
+    <TextView
+        android:id="@+id/menu_item_menu_id_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_item_menu_id"
+        android:background="@color/item_green"
+        android:paddingBottom="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="50dp" />
+
+    <TextView
+        android:id="@+id/menu_item_menu_id_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/menu_item_menu_id"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/menu_item_linear"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/menu_item_menu_id_box"
+        android:layout_toRightOf="@+id/menu_item_menu_id_box"
+        android:paddingLeft="5dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/menu_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/menu_item_name_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/menu_item_alt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alternative_name" />
+
+                <TextView
+                    android:id="@+id/menu_item_alt_name_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/menu_item_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category" />
+
+                <TextView
+                    android:id="@+id/menu_item_category_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/menu_item_linear">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/menu_item_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dollar"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/menu_item_cost_int"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>
